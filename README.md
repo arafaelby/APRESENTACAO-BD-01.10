@@ -22,7 +22,7 @@ estoque - produto (1:n)
 
 entrega - funcionário (1:n)
 
-metodo - pagamento (1:n)
+pagamento - metodo (1:n)
 
 Tabelas em ordem:
 1. cliente
