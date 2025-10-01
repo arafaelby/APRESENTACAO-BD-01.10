@@ -22,7 +22,7 @@ estoque - produto (1:n)
 
 entrega - funcionário (1:n)
 
-pagamento - metodo (1:n)
+pagamento - metodo - pagamento_metodo (n:n)
 
 Tabelas em ordem:
 1. cliente
@@ -46,9 +46,11 @@ Tabelas em ordem:
 10. metodo
 ( Pix, cartão, dinheiro. É necessário escolher antes o método pra conseguir realizar o pagamento )
 11. pagamento
-( pagamento dos pedidos )
-12. entrega
+( Dados gerais de transação )
+12. pagamento_metodo
+( Detalha como cada pagamento usou os metodos )
+13. entrega
 ( entrega dos pedidos )
-13. devolução
+14. devolução
 ( Lista de pediddos em devolução )
 
