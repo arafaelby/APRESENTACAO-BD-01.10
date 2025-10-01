@@ -22,8 +22,6 @@ estoque - produto (1:n)
 
 entrega - funcionário (1:n)
 
-pagamento - metodo - pagamento_metodo (n:n)
-
 Tabelas em ordem:
 1. cliente
 ( Lista de clientes )
@@ -43,14 +41,10 @@ Tabelas em ordem:
 ( Lista dos clientes que fizeram pedidos )
 9. pedido_produto
 ( Tabela relacional da lista dos produtos pedidos )
-10. metodo
-( Pix, cartão, dinheiro. É necessário escolher antes o método pra conseguir realizar o pagamento )
-11. pagamento
-( Dados gerais de transação )
-12. pagamento_metodo
-( Detalha como cada pagamento usou os metodos )
-13. entrega
+10. pagamento
+( Tabela para pagamentos )
+11. entrega
 ( entrega dos pedidos )
-14. devolução
+12. devolução
 ( Lista de pediddos em devolução )
 
