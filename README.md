@@ -8,7 +8,7 @@ pedido - produto - pedido_produto(n:n)
 
 categoria - produto(1:n)
 
-produto - fornecedor - produto _fornecedor (n:n)
+produto - fornecedor - fornecedor_produto (n:n)
 
 pedido - pagamento (1:1)
 
@@ -20,31 +20,19 @@ pedido - devolução (1:n)
 
 estoque - produto (1:n)
 
-entrega - funcionário (1:n)
+funcionário - entrega (1:n)
 
 Tabelas em ordem:
 1. cliente
-( Lista de clientes )
 2. funcionário
-( Lista de funcionários )
 3. fornecedor
-( Lista dos fornecedores. Ex: um fornecedor da Nike, outro da Adidas)
-4. categoria
- ( Lista de categorias dos produtos/sapatos. Ex: Bota, Tênis, Salto, Sapatilha)
-5. produto
-( Lista de todos os produtos )
-6. fornecedor_produto
-( Tabela relacional de fornecedores pra quais produtos )
-7. estoque
-( Contém as informações dos produtos, como quantidade )
+4. estoque
+5. categoria
+6. produto
+7. fornecedor_produto
 8. pedido
-( Lista dos clientes que fizeram pedidos )
 9. pedido_produto
-( Tabela relacional da lista dos produtos pedidos )
 10. pagamento
-( Tabela para pagamentos )
 11. entrega
-( entrega dos pedidos )
 12. devolução
-( Lista de pediddos em devolução )
 
